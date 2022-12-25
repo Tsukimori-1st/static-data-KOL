@@ -265,8 +265,8 @@ st.title("KOL Ranking Application")
 st.subheader("Warmest welcome to Mr. Hieu and the Ciaolink team")
 st.markdown("*Guidance*")
 st.markdown("""
-Step 1: Select your Area of Interest. 
-Step 2: Input your desired paramenter via the slider
+Step 1: Select your Area of Interest.\n \n
+Step 2: Input your desired paramenter via the slider\n \n
 Step 3: Click the "Show Results" button to get the ranking of KOL 
 """)
 data = pd.read_csv("ChoiceEx.csv")
