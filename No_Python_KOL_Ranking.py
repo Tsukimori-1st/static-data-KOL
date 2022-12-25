@@ -263,23 +263,24 @@ st.image(image, use_column_width=True)
 
 st.title("KOL Ranking Application")
 st.subheader("Warmest welcome to Mr. Hieu and the Ciaolink team")
-# st.text_input("Enter your Name: ", key="name")
 st.markdown("*Guidance*")
 st.markdown("""
-This is fairly easy to use,sir.
+Step 1: Select your Area of Interest. 
+Step 2: Input your desired paramenter via the slider
+Step 3: Click the "Show Results" button to get the ranking of KOL 
 """)
 data = pd.read_csv("ChoiceEx.csv")
 
 if st.checkbox('Show sample of raw data crawled'):
     data
 
-reachFloat = st.slider('Enter the importance of Reachability', 0.0, 1.0, 0.01)
-trendingFloat = st.slider('Enter the importance of Trending', 0.0, 1.0, 0.01)
-reputationFloat = st.slider('Enter the importance of Reputation', 0.0, 1.0, 0.01)
-
 genre = st.radio(
     "What\'s your area of interest",
     ('Technology', 'Cosmetics', 'F&B'))
+
+reachFloat = st.slider('Enter the importance of Reachability', 0.0, 1.0, 0.01)
+trendingFloat = st.slider('Enter the importance of Trending', 0.0, 1.0, 0.01)
+reputationFloat = st.slider('Enter the importance of Reputation', 0.0, 1.0, 0.01)
 
 if st.button('Show results'):
     trueMain(genre, reachFloat, trendingFloat, reputationFloat)
