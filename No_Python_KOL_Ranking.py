@@ -270,6 +270,7 @@ Step 2: Input your desired paramenter via the slider\n \n
 Step 3: Click the "Show Results" button to get the ranking of KOL 
 """)
 data = pd.read_csv("ChoiceEx.csv")
+data = data.drop(['Unnamed: 0'], axis=1)
 
 if st.checkbox('Show sample of raw data crawled'):
     data
