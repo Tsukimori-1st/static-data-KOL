@@ -253,7 +253,7 @@ def trueMain(choice, reachFloat, trendingFloat, reputationFloat):
 
 
 # Streamlit stuff
-st.set_page_config(page_title="Tech Dasboard",
+st.set_page_config(page_title="Ranking KOL",
                    page_icon=":earth_asia:",
                    # layout="wide"
 )
