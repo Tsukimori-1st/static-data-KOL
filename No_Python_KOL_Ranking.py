@@ -275,6 +275,9 @@ data = data.drop(['Unnamed: 0'], axis=1)
 if st.checkbox('Show sample of raw data crawled'):
     data
 
+st.subheader("More information about KOL")
+st.write("https://public.tableau.com/views/Visualization_16723938354020/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link")
+
 genre = st.radio(
     "What\'s your area of interest",
     ('Technology', 'Cosmetics', 'F&B'))
